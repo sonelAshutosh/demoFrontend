@@ -5,7 +5,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchDataFunction = async () => {
-      const res = await fetch(`https://dummyjson.com/products`)
+      const res = await fetch(`https://demo-backend-lime.vercel.app/`)
       const jsonData = await res.json()
       setData(jsonData)
     }
@@ -16,8 +16,8 @@ export default function Home() {
 
   return (
     <>
-      {/* <h1>{data.name}</h1>
-      <h3>{data.text}</h3> */}
+      <h1>{data.name}</h1>
+      <h3>{data.text}</h3>
     </>
   )
 }
